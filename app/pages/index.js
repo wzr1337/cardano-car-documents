@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <Container className={'mb-5'}>
-      <div className="text-center fw-bold fs-5 mb-3">Cardano Car NFTs</div>
+      <div className="text-center fw-bold fs-5 mb-3">Nerderia Car NFTs</div>
       <AssetList assets={assets} />
     </Container>
   )
