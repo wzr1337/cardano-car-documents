@@ -5,7 +5,7 @@ export default function About() {
     <Container className={'w-50 mb-5 text-center'}>
       <h3 className="mt-5">About</h3>
       <p>
-        This is a prototype that is intended to test a concept that was
+        This is a PROTOTYPE that is intended to test a concept that was
         developed as part of a bachelor thesis:
       </p>
       <p className="fw-bold mt-4 mb-1">

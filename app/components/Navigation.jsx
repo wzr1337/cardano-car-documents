@@ -20,7 +20,12 @@ export default function Navigation() {
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top" collapseOnSelect>
       <Container className={'text-uppercase'}>
         <Link href="/" passHref>
-          <Navbar.Brand>CardanoCars</Navbar.Brand>
+          <Navbar.Brand>
+            <Image src="/nerderia_logo_h.png"
+              alt="Nerderia"
+              width={150}
+              height={50}></Image>
+            </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

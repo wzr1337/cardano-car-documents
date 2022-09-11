@@ -331,7 +331,7 @@ export default function MintNFT() {
                 <Col className="col-auto">
                   <Button
                     className={'px-5'}
-                    variant="outline-dark"
+                    variant="outline-light"
                     type="submit"
                   >
                     Create

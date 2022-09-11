@@ -20,7 +20,7 @@ export default function PolicyItem({ policy }) {
           <Col>{policy.name}</Col>
           <Col className="col-2 text-end">
             <Link href={`/manage/${policy.policyId}/mint`} passHref>
-              <Button variant="outline-dark">Mint NFT</Button>
+              <Button variant="outline-light">Mint NFT</Button>
             </Link>
           </Col>
         </Row>

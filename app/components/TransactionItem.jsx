@@ -48,7 +48,7 @@ export default function TransactionItem({ walletId }) {
     <>
       <Container className="d-flex justify-content-center mt-3">
         <Col className="col-auto">
-          <Button variant="dark" className="px-4" onClick={handleShow}>
+          <Button variant="light" className="px-4" onClick={handleShow}>
             Create Transaction
           </Button>
         </Col>

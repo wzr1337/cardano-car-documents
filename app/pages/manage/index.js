@@ -48,12 +48,12 @@ export default function ManageOrganization() {
           <Row>
             <Col className={'text-center'}>
               <Link href="/manage/create" passHref>
-                <Button variant="outline-dark">Create</Button>
+                <Button variant="outline-light">Create</Button>
               </Link>
             </Col>
             <Col className={'text-center'}>
               <Link href="/manage/modify" passHref>
-                <Button variant="outline-dark">Modify</Button>
+                <Button variant="outline-light">Modify</Button>
               </Link>
             </Col>
           </Row>

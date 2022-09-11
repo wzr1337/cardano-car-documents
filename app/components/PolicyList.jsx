@@ -44,7 +44,7 @@ export default function PolicyList({ organizationId }) {
       </Container>
       <Row className="justify-content-center mt-3">
         <Col className="col-auto">
-          <Button variant="dark" className="px-4" onClick={handleShow}>
+          <Button variant="light" className="px-4" onClick={handleShow}>
             Create new policy
           </Button>
         </Col>

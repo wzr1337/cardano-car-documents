@@ -50,7 +50,7 @@ export default function WalletItem({ walletId }) {
         </Row>
       </Container>
       {wallet.amount?.length > 1 && (
-        <div className="fw-bold fs-6 my-4 text-center ">NFTs</div>
+        <h2 className="fw-bold fs-3 my-4 text-center ">NFTs</h2>
       )}
       <AssetList assets={wallet.amount} />
       {enableTransactions && <TransactionItem walletId={walletId} />}
