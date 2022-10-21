@@ -172,6 +172,8 @@ If you want to work on the webapp, you can simply change the contents in the `./
 ### Enforcing conatiner rebuild
 If you change the different containers themselves, you might want to run `docker-compose up --build` to enforce a rebuild.
 
+If you want to rebuild only a single app, run `docker-compose up -d --force-recreate --no-deps --build <application_name_from_docker-compose.yml`
+
 
 <br>
 ~ By creating the prototype and experimenting with it, it is easy to imagine that NFTs will be used for more than just digital art in the future.
