@@ -25,7 +25,7 @@ async function main() {
   })
   console.log('----------------------------------------------')
   console.log(
-    `Go to: https://testnets.cardano.org/en/testnets/cardano/tools/faucet/ and topup your wallet with some tAda.\nAddress: ${walletMain.address}`
+    `Go to: https://docs.cardano.org/cardano-testnet/tools/faucet and topup your wallet with some tAda.\nAddress: ${walletMain.address}`
   )
   console.log('----------------------------------------------')
 

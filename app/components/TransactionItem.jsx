@@ -78,7 +78,7 @@ export default function TransactionItem({ walletId }) {
                       <div>
                         <span className="fw-bold">Transaction: </span>{' '}
                         <a
-                          href={`https://explorer.cardano-testnet.iohkdev.io/en/transaction?id=${txInfo.txHash}`}
+                          href={`https://explorer.cardano-preprod.iohkdev.io/en/transaction?id=${txInfo.txHash}`}
                           target="_blank"
                         >
                           {txInfo.txHash}

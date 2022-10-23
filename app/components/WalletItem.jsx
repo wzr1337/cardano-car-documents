@@ -22,6 +22,8 @@ export default function WalletItem({ walletId }) {
   const [user] = useUser()
   const { organization } = useOrganization(user?.organizationId)
 
+  console.log(`[WalletItem()] fetching wallet Id: ${walletId}`)
+
   const enableTransactions =
     user &&
     (user.walletId == wallet?.id || organization?.walletId == wallet?.id)

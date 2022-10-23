@@ -7,7 +7,9 @@ import {
 
 const handler = nextConnect()
 
-handler.use(auth).get(async (req, res) => {
+handler
+.use(auth) // use auth middleware
+.get(async (req, res) => { // register GET
   const { address } = req.query
 
   const wallet = address.startsWith('addr_')

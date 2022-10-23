@@ -34,6 +34,7 @@ class WalletManager {
 
   getWallets() {
     let wallets = []
+    console.log('getWallets()')
     fs.readdirSync(this.walletDir).forEach((file) => {
       wallets.push(this.getWallet(file))
     })
@@ -41,6 +42,7 @@ class WalletManager {
   }
 
   getWallet(name) {
+    console.log(`getWallet(${name})`)
     return cardano.wallet(name)
   }
 

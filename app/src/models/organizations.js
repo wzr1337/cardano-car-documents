@@ -26,6 +26,7 @@ export async function createOrganization({ name, slug, type, description }) {
 }
 
 export async function getOrganizationById(id) {
+  console.log(`getOrganizationById(${id})`)
   let organization = await prisma.organization.findUnique({
     where: {
       id: parseInt(id),
@@ -36,6 +37,7 @@ export async function getOrganizationById(id) {
 }
 
 export async function getOrganizationBySlug(slug) {
+  console.log(`getOrganizationBySlug(${slug})`)
   let organization = await prisma.organization.findUnique({
     where: {
       slug,
@@ -46,6 +48,7 @@ export async function getOrganizationBySlug(slug) {
 }
 
 export async function getAllOrganizations() {
+  console.log(`getAllOrganizations()`)
   const organizations = await prisma.organization.findMany()
   return organizations
 }

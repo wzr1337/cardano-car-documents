@@ -34,11 +34,13 @@ export async function createWallet() {
 }
 
 export async function getWalletById(id) {
+  console.log(`getWalletById(${id})`);
   let wallet = await prisma.wallet.findUnique({
     where: {
       id: parseInt(id),
     },
   })
+  console.log(`getWalletById(${id}) wallet: ${JSON.stringify(wallet)}`);
   if (wallet) {
     const info = await walletManager.getWalletInfo(wallet.id)
     return {
@@ -51,6 +53,7 @@ export async function getWalletById(id) {
 }
 
 export async function getWalletByAddress(address) {
+  console.log(`getWalletByAddress(${address})`)
   let wallet = await prisma.wallet.findUnique({
     where: {
       address,
@@ -68,6 +71,7 @@ export async function getWalletByAddress(address) {
 }
 
 export async function getWalletAssets(id) {
+  console.log(`getWalletAssets(${id})`);
   const wallet = await getWalletById(id)
   const assets = []
   if (wallet) {

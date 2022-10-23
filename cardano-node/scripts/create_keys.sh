@@ -12,4 +12,4 @@ cardano-cli address key-gen \
 cardano-cli address build \
 --payment-verification-key-file $KEY_DIR/payment1.vkey \
 --out-file $KEY_DIR/payment1.addr \
---testnet-magic 1097911063
+--testnet-magic 1
